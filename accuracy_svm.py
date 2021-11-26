@@ -33,10 +33,10 @@ clf.fit(x_train, y_train)
 classifier_predictions = clf.predict(x_test)
 
 #open a file, where you wany to store  the data
-file = open('model.pkl','wb')
+#file = open('model.pkl','wb')
 #dump information to that file
-pickle.dump(clf,file)
-file.close()
+#pickle.dump(clf,file)
+#file.close()
 
 #step6. Calculate the accuracy from the the prediction result.
 print("Accuracy is ", accuracy_score(y_test, classifier_predictions)*100)
